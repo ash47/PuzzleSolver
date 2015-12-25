@@ -422,17 +422,17 @@ solver.add(shell_star, fish_head, horse_body, crab_up);
 solver.add(shell_star, fish_body, horse_head, crab_up);*/
 
 // Plane solver
-solver.add(grey_back, yellow_back, white_front, green_back)
-solver.add(yellow_front, white_front, grey_front, green_front);
-solver.add(yellow_back, green_back, grey_back, white_front);
+solver.add(yellow_back, grey_back, green_back, white_front);
+solver.add(yellow_front, yellow_front, grey_front, white_back);
+solver.add(white_front, grey_back, green_back, yellow_back);
 
+solver.add(grey_back, green_back, yellow_back, green_front);
+solver.add(yellow_front, grey_front, white_front, green_back);
 solver.add(yellow_back, white_back, grey_back, green_front);
-solver.add(white_back, grey_front, yellow_front, yellow_front);
-solver.add(green_back, white_front, grey_front, yellow_front);
 
-solver.add(green_front, grey_back, white_back, yellow_front);
-solver.add(yellow_back, grey_back, green_front, green_back);
-solver.add(yellow_back, grey_back, white_back, green_front);
+solver.add(white_front, green_front, yellow_front, grey_front);
+solver.add(white_back, yellow_back, green_front, grey_back);
+solver.add(white_back, green_front, yellow_front, grey_back);
 
 // Do the solve
 solver.solve();
