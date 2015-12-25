@@ -1,0 +1,2 @@
+node solver.js
+pause
